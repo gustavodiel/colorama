@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-module Colorama
-  module ColorExtractor
+module Colorama::ColorExtractor
     THRESHOLD_MODIFIER = 0.01
 
     class << self
