@@ -5,8 +5,15 @@ require "rmagick"
 require_relative "../lib/colorama/color"
 
 RSpec.describe Colorama::Color do
-  subject { described_class.new_from_rgb(red, green, blue) }
-  let(:red) { 255 }
-  let(:green) { 255 }
-  let(:blue) { 255 }
+  subject(:color) { described_class.new_from_rgb(red, green, blue) }
+
+  let(:red) { 12 }
+  let(:green) { 14 }
+  let(:blue) { 13 }
+
+  describe '#hex' do
+    subject(:hex) { color.hex }
+
+    it { is_expected.to eq('0c0e0d') }
+  end
 end

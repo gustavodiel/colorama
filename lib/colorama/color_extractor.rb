@@ -67,8 +67,8 @@ module Colorama::ColorExtractor
 
       dark_background = proposed[0].dark_color?
 
-      proposed.count.times.each do |i|
-        proposed[i] = Colorama::Color.new_from_double(dark_background && 255_255_255 || 0) if proposed[i] == -1
+      (1..3).each do |i|
+        proposed[i] = Colorama::Color.new_from_double(dark_background ? 255_255_255 : 0) if proposed[i] == -1
       end
 
       {

@@ -40,6 +40,10 @@ colors = Colorama.extract_from_file('filename', detail: :high)
 
 It accepts `lowest`, `low`, `high` and `highest`
 
+## Examples
+
+![](./.images/examples.jpg)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -42,7 +42,7 @@ RSpec.describe Colorama do
 
     context 'on Deadmau5 2' do
       let(:filename) { 'spec/fixtures/deadmau5_2.jpg' }
-      let(:expected_background) { '1a0033' }
+      let(:expected_background) { '1a0003' }
       let(:expected_detail) { 'febcc6' }
       let(:expected_primary) { 'be6f8e' }
       let(:expected_secondary) { 'ff6ca9' }
@@ -55,7 +55,7 @@ RSpec.describe Colorama do
       let(:expected_background) { '4b9fdd' }
       let(:expected_detail) { '001027' }
       let(:expected_primary) { '0066b7' }
-      let(:expected_secondary) { '994076' }
+      let(:expected_secondary) { '094076' }
 
       it_behaves_like 'a color extractor'
     end
@@ -75,7 +75,7 @@ RSpec.describe Colorama do
       let(:expected_background) { 'fdfdfd' }
       let(:expected_detail) { '000000' }
       let(:expected_primary) { '7e6b6b' }
-      let(:expected_secondary) { '886666' }
+      let(:expected_secondary) { '080606' }
 
       it_behaves_like 'a color extractor'
     end
@@ -83,7 +83,7 @@ RSpec.describe Colorama do
     context 'on purple haze' do
       let(:filename) { 'spec/fixtures/purple_haze.jpg' }
       let(:expected_background) { 'b0b9d8' }
-      let(:expected_detail) { '49ff49' }
+      let(:expected_detail) { '490f49' }
       let(:expected_primary) { '6f5787' }
       let(:expected_secondary) { 'b13a7c' }
 
@@ -92,7 +92,7 @@ RSpec.describe Colorama do
 
     context 'on RAM' do
       let(:filename) { 'spec/fixtures/ram.jpg' }
-      let(:expected_background) { 'cceedd' }
+      let(:expected_background) { '0c0e0d' }
       let(:expected_detail) { 'd8b7b7' }
       let(:expected_primary) { '9177ab' }
       let(:expected_secondary) { 'd1acf7' }

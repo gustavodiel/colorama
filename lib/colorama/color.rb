@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'pry'
+
 module Colorama
   class Color
     attr_reader :red, :green, :blue
@@ -27,13 +29,9 @@ module Colorama
 
     def hex
       @hex ||= begin
-        red_hex = red.to_s(16)
-        green_hex = green.to_s(16)
-        blue_hex = blue.to_s(16)
-
-        red_hex += red_hex unless red_hex.length == 2
-        green_hex += green_hex unless green_hex.length == 2
-        blue_hex += blue_hex unless blue_hex.length == 2
+        red_hex = red.to_s(16).rjust(2, '0')
+        green_hex = green.to_s(16).rjust(2, '0')
+        blue_hex = blue.to_s(16).rjust(2, '0')
 
         "#{red_hex}#{green_hex}#{blue_hex}"
       end
