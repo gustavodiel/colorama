@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
-
 module Colorama
   class Color
     attr_reader :red, :green, :blue
